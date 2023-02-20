@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int n,i,ele,l;
+	scanf("%d",&n);
+	i=0;
+	l=0;
+	while(i<=n)
+    {
+    scanf("%d",&ele);
+	if(i==l)
+	l=ele;
+	if(ele<l)
+	l=ele;
+	i++;
+	}
+	printf("\nlowest=%d",l);
+}
